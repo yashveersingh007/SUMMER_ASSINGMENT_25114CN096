@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int main () {
+    int N, digit;
+    int original;
+    cout << "N is number to check whether it is Palindrome or not" << endl;
+    cout << "Enter N = ";
+    cin >> N;
+    original = N;
+    int rev=0;
+    while(N>0){
+        digit = N%10;
+        rev = rev * 10 + digit;
+        N = N/10;
+    }
+    cout << "Reverse of the Number = ";
+    cout << rev << endl;
+    if(rev==original)
+       cout << "YES! The number is a PALINDROME" << endl;
+    else
+        cout << "NO! The number is NOT a PALINDROME";
+return 0;
+}
