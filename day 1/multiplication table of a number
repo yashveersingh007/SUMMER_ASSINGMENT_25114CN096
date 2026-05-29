@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+int main () {
+    int N, prod=0;
+    cout << "N is number you need multiplication table of" << endl;
+    cout << "Enter N = ";
+    cin >> N;
+    for(int i=1; i<=10; i++){
+        prod=N*i;
+        cout << N << "*" << i << " = " << prod << endl;
+    }
+return 0;
+}
