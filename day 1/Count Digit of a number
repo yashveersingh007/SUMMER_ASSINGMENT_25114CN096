@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main () {
+    long long N, count=0;
+    cout << "N is number you need to count digit of" << endl;
+    cout << "Enter N = ";
+    cin >> N;
+    while(N>0) {
+    N = N/10;
+    count++;
+    }
+    cout <<"Total digit of the Number = "<< count << endl;
+    return 0;
+}
