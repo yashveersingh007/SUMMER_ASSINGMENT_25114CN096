@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main () {
+    int N, digit, sum=0;
+    cout << "N is number whose sum of digit you need" << endl;
+    cout << "Enter N = ";
+    cin >> N;
+    while(N>0){
+        digit = N%10;
+        sum+=digit;
+        N = N/10;
+    }
+    cout << "sum = " ;
+    cout << sum;
+return 0;
+}

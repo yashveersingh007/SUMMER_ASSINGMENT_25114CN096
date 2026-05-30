@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main () {
+    int N, digit;
+    cout << "N is number whose sum of digit you need" << endl;
+    cout << "Enter N = ";
+    cin >> N;
+    int rev=0;
+    while(N>0){
+        digit = N%10;
+        rev = rev * 10 + digit;
+        N = N/10;
+    }
+    cout << "Reverse of the Number = " ;
+    cout << rev;
+return 0;
+}
