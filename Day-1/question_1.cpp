@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main () {
+    int N, sum=0;
+    cout << "N is number of natural number you need sum of" << endl;
+    cout << "Enter N = ";
+    cin >> N;
+    for(int i=1; i<=N; i++){
+        sum+=i;
+    }
+    cout << "sum = " ;
+    cout << sum;
+return 0;
+}
